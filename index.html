@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Date and Time</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+  <body>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+
+    <div id="boxcol">
+
+    <center>    <h1>Current time is: <span id="time1"></span></h1>
+
+</center>
+</div>
+  <script>
+      setInterval(() => {
+    a=new Date();
+    let allinfo={ weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'};
+    let date=a.toLocaleDateString(undefined,allinfo);
+    let hrs=a.getHours();
+    let time=a.getHours()+':'+a.getMinutes()+':'+a.getSeconds();
+    document.getElementById('time1').innerHTML=time+'<br> on '+date; 
+
+    if (hrs > 19 || hrs < 6)
+	  {// If time is after 7PM or before 6AM, apply night theme to ‘body’
+	  document.body.className = "night";
+    document.getElementById('boxcol').className = "dayh";
+      }
+      
+	else if (hrs > 16 && hrs < 19)
+	  // If time is between 4PM – 7PM sunset theme to ‘body’
+	  document.body.className = "sunset";
+	else
+	  // Else use ‘day’ theme
+	  document.body.className = "day";
+      
+}, 1000);
+
+// setInterval(() => {
+
+// if (hrs > 19 || hrs < 6)
+// document.querySelector('h1').className = "dayh";
+// }, 1000);
+
+
+
+</script>  
+    </body>
+</html>
