@@ -1,0 +1,36 @@
+h1{
+    /* justify-content:center; */
+    top: 50%;
+    align-items: center;
+    max-width: 60%;
+    height: 50%;
+    padding: 100px;
+    display: grid;   
+    /* align-items:center;  */
+    /* color: rgb(255, 255, 255); */
+    /* background-color: rgba(82, 189, 195, 0.45); */
+    border-radius: 20px;
+    /* border: 10px solid rgba(255, 255, 255, .25); */
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .25);
+    backdrop-filter: blur(5px);
+    
+  
+}
+.day { background: url('morning2.jpg');
+    color: black;
+            
+    }
+.sunset { background: url('sunset2.jpg');
+        color: black;
+            
+    }
+.night { background: url('night.jpg');
+        color: whitesmoke;
+            
+    }
+
+.dayh{ background-color: rgb(195, 255, 0);}
+
+/* #boxcol{
+    background-color:yellowgreen;
+} */
