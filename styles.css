@@ -13,13 +13,18 @@ h1{
 }
 .day { background: url('morning2.jpg');
     color: black;
+        background-size: cover;
+    background-repeat: no-repeat;
             
     }
 .sunset { background: url('sunset2.jpg');
         color: black;
+        background-size: cover;
+    background-repeat: no-repeat;
             
     }
 .night { background: url('night2.jpg');
         color: whitesmoke;
-            
+                background-size: cover;
+    background-repeat: no-repeat;
     }
